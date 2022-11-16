@@ -9,12 +9,7 @@ function archive () {
 
 case $SYSTEM in
   psx)
-    archive rr-sony-playstation-u "usa/${GAME}"
-    cd /roms/psx/usa
-    7zr e "*.7z"
-    mv *.bin ../
-    mv *.cue ../
-    rm -rf /roms/psx/usa
+    archive projeto-launchbox-sony-playstation "${GAME}"
     ;;
   gba)
     archive nointro.gba "${GAME}"
